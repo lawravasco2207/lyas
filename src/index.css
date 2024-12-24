@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f0f8; /* Light pink background for a soft, elegant look */
+  font-family: 'Arial', sans-serif;
+}
+
+.ybh {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(270deg, hwb(300 11% 27%), hsl(350, 94%, 82%), rgb(141, 8, 141), hsl(280, 100%, 50%), hsl(320, 100%, 75%));
+  background-size: 800% 800%;
+  padding: 25px;
+  margin: 4px;
+  border-radius: 7px;
+  animation: color-slide 10s infinite ease-in-out;
+  overflow: hidden;
+}
+
+@keyframes color-slide {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.star {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: gold;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  animation: rotate-star 5s linear infinite;
+}
+
+@keyframes rotate-star {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.profile {
+  position: relative;
+}
+
+.display-image {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.display-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+  gap: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  position: relative;
+  animation: float-animation 6s ease-in-out infinite;
+}
+
+
+.video-item {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4); /* Soft shadow for elegance */
+}
+
+
+.content-display {
+  margin-top: 50px;
+}
+
+
+.content {
+  text-align: center;
+}
+
+
+.content h5 {
+  display: inline-block;
+  background-color: darkgray;
+  border-radius: 20px;
+  padding: 10px;
+  color: royalblue;
+  box-shadow: outset 0 0 10px 5px rgba(255, 105, 180, 0.4);
+}
+
+
+.content p {
+  display: block;
+  color: blue;
+  border-radius: 20px;
+  background-color: gray;
+  width: fit-content;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 9px;
+}
+
+
+.account-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.account-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  display: block;
+  align-items: center;
+  background-color: rebeccapurple;
+  padding: 12px;
+  width: 80%;
+  border-radius: 30px;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.account-links i {
+  margin-left: 8px;
+}
+
+
+/* Christmas Footer Styling */
+.christmas-footer {
+  background-color: #800080; /* Festive Purple */
+  color: #fff; /* White Text */
+  padding: 20px 0;
+  text-align: center;
+  border-top: 5px solid #fff; /* Optional: Decorative Border */
+  position: relative;
+  font-family: 'Arial', sans-serif; /* Ensure a clean font */
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-message {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+  background: linear-gradient(90deg, #ff0000, #ff7300, #ffd700);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Gradient Text Effect */
+}
+
+.footer-name {
+  font-size: 2rem;
+  color: #ffd700; /* Gold for 'Yas' */
+}
+
+.footer-subtext {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #f5f5f5;
+}
+
+/* Optional: Add Christmas Icon Animation */
+.christmas-footer .footer-message::before {
+  content: "❄️";
+  margin-right: 10px;
+  animation: snowflake 2s linear infinite;
+}
+
+@keyframes snowflake {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
