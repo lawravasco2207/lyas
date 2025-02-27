@@ -1,6 +1,6 @@
-import TikTokVideoLoop from './TikTokVideoLoop';
+// import TikTokVideoLoop from './TikTokVideoLoop';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 const Yas = () => {
   const ybh = () => {
@@ -31,8 +31,8 @@ const Yas = () => {
         <Content />
         <Accounts />
       </div>
-      <TikTokVideoLoop />
-      <Footer />
+      
+      {/* <Footer /> */}
     </>
   );
 };
@@ -42,7 +42,9 @@ const Yas = () => {
 function Content() {
   return (
     <div className='content'>
-       <h5 className='name'>Hi! Am Yas💕</h5>
+      <br />
+       <h5 className='name'>Hi! Am Yas🌸</h5>
+       <br />
        <p className='descript'>A content creator and micro influencer✨</p>
     </div>
   )

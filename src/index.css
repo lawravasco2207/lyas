@@ -19,7 +19,7 @@ body {
   padding: 25px;
   margin: 4px;
   border-radius: 7px;
-  animation: color-slide 10s infinite ease-in-out;
+  animation: color-slide 10s infinite ease-in-out; 
   overflow: hidden;
 }
 
@@ -161,6 +161,12 @@ body {
   border-radius: 30px;
   text-align: center;
   max-width: 1200px;
+}
+
+.account-links a:hover {
+  background-color: darkorchid;
+  box-shadow: inset 0 0 10px 5px rgba(255, 105, 180, 0.4);
+  
 }
 
 .account-links i {
